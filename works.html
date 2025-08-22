@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Humbal | Home</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/responsive.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    
+    <!-- projects section start here -->
+    <section class="projects-outer out-padding container">
+      <div class="section-header">
+        <div class="line-outer">
+          <h2><span class="text-purple">#</span>projects/</h2>  
+        </div>
+      </div>
+      <div class="projects-inner">
+        <div class="project-dot-img">
+          <svg class="decor-dot" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"></circle><circle cx="22" cy="2" r="2" fill="currentColor"></circle><circle cx="42" cy="2" r="2" fill="currentColor"></circle><circle cx="62" cy="2" r="2" fill="currentColor"></circle><circle cx="82" cy="2" r="2" fill="currentColor"></circle><circle cx="2" cy="22" r="2" fill="currentColor"></circle><circle cx="22" cy="22" r="2" fill="currentColor"></circle><circle cx="42" cy="22" r="2" fill="currentColor"></circle><circle cx="62" cy="22" r="2" fill="currentColor"></circle><circle cx="82" cy="22" r="2" fill="currentColor"></circle><circle cx="2" cy="42" r="2" fill="currentColor"></circle><circle cx="22" cy="42" r="2" fill="currentColor"></circle><circle cx="42" cy="42" r="2" fill="currentColor"></circle><circle cx="62" cy="42" r="2" fill="currentColor"></circle><circle cx="82" cy="42" r="2" fill="currentColor"></circle><circle cx="2" cy="62" r="2" fill="currentColor"></circle><circle cx="22" cy="62" r="2" fill="currentColor"></circle><circle cx="42" cy="62" r="2" fill="currentColor"></circle><circle cx="62" cy="62" r="2" fill="currentColor"></circle><circle cx="82" cy="62" r="2" fill="currentColor"></circle><circle cx="2" cy="82" r="2" fill="currentColor"></circle><circle cx="22" cy="82" r="2" fill="currentColor"></circle><circle cx="42" cy="82" r="2" fill="currentColor"></circle><circle cx="62" cy="82" r="2" fill="currentColor"></circle><circle cx="82" cy="82" r="2" fill="currentColor"></circle></svg>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            
+             <video src="./assets/videos/portfolio.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-1</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+             <video src="./assets/videos/chloe.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-2</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/assets/images/Rectangle 22 (1).png" alt="" />
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-3</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      <!-- footer -->
+       <div id="footer"></div>
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+      initNavbar(); // Call this AFTER navbar loads
+      initThemeToggle(); // if you're using theme switch
+      setActiveNav();
+    });
+    </script>
+    <script>loadFooter();</script>
+    
+  </body>
+</html>
+
+<!-- projects section start here -->
+    <!-- <section class="projects-outer container">
+      <div class="section-header">
+        <div class="line-outer">
+          <h2><span class="text-purple">#</span>projects</h2>
+          <div class="divider-line"></div>
+        </div>
+        <div>
+          <a href="#" class="view-all">View all~~></a>
+        </div>
+      </div>
+      <div class="projects-inner outer">
+        <div class="project-dot-img">
+          <svg class="decor-dot" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"></circle><circle cx="22" cy="2" r="2" fill="currentColor"></circle><circle cx="42" cy="2" r="2" fill="currentColor"></circle><circle cx="62" cy="2" r="2" fill="currentColor"></circle><circle cx="82" cy="2" r="2" fill="currentColor"></circle><circle cx="2" cy="22" r="2" fill="currentColor"></circle><circle cx="22" cy="22" r="2" fill="currentColor"></circle><circle cx="42" cy="22" r="2" fill="currentColor"></circle><circle cx="62" cy="22" r="2" fill="currentColor"></circle><circle cx="82" cy="22" r="2" fill="currentColor"></circle><circle cx="2" cy="42" r="2" fill="currentColor"></circle><circle cx="22" cy="42" r="2" fill="currentColor"></circle><circle cx="42" cy="42" r="2" fill="currentColor"></circle><circle cx="62" cy="42" r="2" fill="currentColor"></circle><circle cx="82" cy="42" r="2" fill="currentColor"></circle><circle cx="2" cy="62" r="2" fill="currentColor"></circle><circle cx="22" cy="62" r="2" fill="currentColor"></circle><circle cx="42" cy="62" r="2" fill="currentColor"></circle><circle cx="62" cy="62" r="2" fill="currentColor"></circle><circle cx="82" cy="62" r="2" fill="currentColor"></circle><circle cx="2" cy="82" r="2" fill="currentColor"></circle><circle cx="22" cy="82" r="2" fill="currentColor"></circle><circle cx="42" cy="82" r="2" fill="currentColor"></circle><circle cx="62" cy="82" r="2" fill="currentColor"></circle><circle cx="82" cy="82" r="2" fill="currentColor"></circle></svg>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/assets/images/Rectangle 22.png" alt="" />
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-1</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/assets/images/Rectangle 221.jpg" alt="" />
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-1</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/assets/images/Rectangle 22 (1).png" alt="" />
+          </div>
+          <div class="project-lang">
+            <p>HTML SCSS js</p>
+          </div>
+          <div class="project-content">
+            <h3>project-1</h3>
+            <p>Description</p>
+            <div class="project-btn">
+              <button class="primary-btn">code ></button>
+              <button class="secondary-btn">Live <~></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->

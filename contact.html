@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Humbal | Home</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/responsive.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    
+     <!-- contact section -->
+      <section class="contact-outer out-padding container">
+        <div class="section-header">
+          <div class="line-outer">
+            <h2><span class="text-purple">#</span>contact-me</h2>
+            <div class="skill-divider-line"></div>
+          </div>
+        </div>
+        <div class="contact-inner">
+          <div class="contact-left-box">
+            <p>
+              I'm interested in working on ambitious projects with positive people and goal-oriented companies.
+            </p>
+            <p>
+              However, if you have other request or question, don’t hesitate to contact me.
+            </p>
+            <button class="primary-btn">Reach out   &#10230;</button> 
+          </div>
+          <div class="contact-right-box">
+            <div class="skill-card">
+            <div class="skill-card-header">
+              <h3>Message me</h3>
+              </div>
+              <div class="contact-card-text">
+                <ul>
+                  <li><a href="mailto:humbal0300@gmail.com"><i class="fa-solid fa-envelope"></i>humbal0300@gmail.com</a></li>
+                  <li><a href="https://www.linkedin.com/in/humbal-ahmad-54491622a/" target="_blank"><i class="fa-brands fa-linkedin-in"></i>Humbal Ahmad</a></li>
+                  
+                  <li>
+                    <a href="tel:+923188585779"><i style="display: contents;" class="fa-solid fa-phone"></i> +923188585779</a>
+                  </li>
+                </ul>
+              </div>
+            
+          </div>
+          </div>
+            <div class="contact-dot">
+              <svg class="decor-dot" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="currentColor"></circle><circle cx="22" cy="2" r="2" fill="currentColor"></circle><circle cx="42" cy="2" r="2" fill="currentColor"></circle><circle cx="62" cy="2" r="2" fill="currentColor"></circle><circle cx="82" cy="2" r="2" fill="currentColor"></circle><circle cx="2" cy="22" r="2" fill="currentColor"></circle><circle cx="22" cy="22" r="2" fill="currentColor"></circle><circle cx="42" cy="22" r="2" fill="currentColor"></circle><circle cx="62" cy="22" r="2" fill="currentColor"></circle><circle cx="82" cy="22" r="2" fill="currentColor"></circle><circle cx="2" cy="42" r="2" fill="currentColor"></circle><circle cx="22" cy="42" r="2" fill="currentColor"></circle><circle cx="42" cy="42" r="2" fill="currentColor"></circle><circle cx="62" cy="42" r="2" fill="currentColor"></circle><circle cx="82" cy="42" r="2" fill="currentColor"></circle><circle cx="2" cy="62" r="2" fill="currentColor"></circle><circle cx="22" cy="62" r="2" fill="currentColor"></circle><circle cx="42" cy="62" r="2" fill="currentColor"></circle><circle cx="62" cy="62" r="2" fill="currentColor"></circle><circle cx="82" cy="62" r="2" fill="currentColor"></circle><circle cx="2" cy="82" r="2" fill="currentColor"></circle><circle cx="22" cy="82" r="2" fill="currentColor"></circle><circle cx="42" cy="82" r="2" fill="currentColor"></circle><circle cx="62" cy="82" r="2" fill="currentColor"></circle><circle cx="82" cy="82" r="2" fill="currentColor"></circle></svg>
+            </div>
+            <div class="contact-logo">
+              <img src="/assets/images/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+       <div id="footer"></div>
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+      initNavbar(); // Call this AFTER navbar loads
+      initThemeToggle(); // if you're using theme switch
+      setActiveNav();
+    });
+    </script>
+    <script>loadFooter();</script>
+    
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/* ipad pro */
+@media (max-width: 1024px) and (min-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+  nav.navbar.container {
+    padding: 0 20px;
+  }
+  .nav-social {
+    display: none;
+  }
+  .projects-outer {
+    padding-top: 100px;
+  }
+  .skills-outer {
+    padding-top: 100px;
+  }
+  .about-outer {
+    padding-top: 100px;
+  }
+  .contact-outer {
+    padding-top: 100px;
+  }
+  /* .hero-section {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .container {
+  padding: 0 16px;
+}
+nav.navbar.container {
+  padding: 0 16px;
+
+}
+  .hero-left-outer, .hero-right-image {
+    width: 100%;
+  }
+  .hero-right-image {
+    width: 50%;
+    text-align: center;
+} */
+}
+/* ipad mini */
+@media (max-width: 991px) and (min-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 100px;
+  }
+  .container {
+    padding: 0 4%;
+  }
+  nav.navbar.container {
+    padding: 40px 20px;
+  }
+  .hero-left-outer,
+  .hero-right-image {
+    width: 100%;
+  }
+  .hero-right-image {
+    width: 50%;
+    text-align: center;
+  }
+  .projects-outer {
+    padding-top: 100px;
+  }
+  .skills-outer {
+    padding-top: 100px;
+  }
+  .skill-reqtangle-img {
+    left: 175px;
+    top: 0px;
+  }
+  .skill-dot-img {
+    top: 35px;
+    left: 0px;
+  }
+  .skills-inner {
+    padding-top: 35px;
+  }
+  .skill-logo-img {
+    top: 143px;
+    left: 15px;
+  }
+  .skill-dot1-img {
+    top: 115px;
+    left: 150px;
+  }
+  .skill-reqtangle2-img {
+    top: 185px;
+    left: 240px;
+  }
+  .skill-divider-line {
+    max-width: 160px;
+  }
+  .about-outer {
+    padding-top: 100px;
+  }
+  .contact-outer {
+    padding-top: 100px;
+  }
+  .contact-left-box {
+    max-width: 263px;
+  }
+  .contact-dot {
+    right: 325px;
+  }
+  .contact-logo img {
+    width: 100px;
+    height: auto;
+  }
+}
+/* phone */
+@media screen and (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 80px;
+  }
+  .container {
+    padding: 0 4%;
+  }
+  nav.navbar.container {
+    padding: 20px 20px;
+  }
+  .hero-left-outer,
+  .hero-right-image {
+    width: 100%;
+  }
+  .hero-left-inner {
+    gap: 0px;
+  }
+  .hero-right-image {
+    text-align: center;
+  }
+  .rec-img {
+    display: none;
+  }
+  .section-header h2 {
+    font-weight: 600;
+}
+.hero-img-txt {
+  max-width: 330px;
+}
+  .projects-outer {
+    padding-top: 120px;
+  }
+
+  .skills-outer {
+    padding-top: 100px;
+  }
+  .skills-inner {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .skill-left-box {
+    display: none;
+  }
+  .first-skill {
+    order: 1;
+  }
+  .skill-right-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .skill-card-grid {
+    flex-direction: row;
+  }
+  .about-outer {
+    padding-top: 100px;
+  }
+  .about-inner {
+    flex-direction: column;
+  }
+  .about-left-box {
+    width: 100%;
+  }
+  .contact-outer {
+    padding-top: 100px;
+  }
+  .contact-inner {
+    flex-direction: column;
+  }
+  .contact-logo {
+    display: none;
+  }
+  .site-footer {
+    margin-top: 40px;
+  }
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* mini phone */
+@media (max-width: 412px) and (min-width: 320px) {
+}
