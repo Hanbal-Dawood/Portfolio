@@ -56,18 +56,59 @@ function initThemeToggle() {
 }
 
 
-const target = document.getElementById("animated-text");
-const text = "front-end  developer";
+// const target = document.getElementById("animated-text");
+// const text = "front-end  developer";
 
-[...text].forEach((char, i) => {
-  const span = document.createElement("span");
-  span.textContent = char;
-  setTimeout(() => {
-    span.style.opacity = "1";
-    // span.style.transform = "translateY(0)";
-  }, 200 * i); // ← slow typing speed
-  target.appendChild(span);
-});
+// [...text].forEach((char, i) => {
+//   const span = document.createElement("span");
+//   span.textContent = char;
+//   setTimeout(() => {
+//     span.style.opacity = "1";
+//     // span.style.transform = "translateY(0)";
+//   }, 200 * i);
+//   target.appendChild(span);
+// });
+
+const target = document.getElementById("animated-text");
+
+// Words to loop through
+const textArray = ["Front-End Developer", "Web Designer", "Problem Solver"];
+
+let i = 0, j = 0;
+let currentWord = "";
+let isDeleting = false;
+let typingSpeed = 120;
+
+function typeEffect() {
+  currentWord = textArray[j];
+
+  if (!isDeleting) {
+    // Typing
+    target.textContent = currentWord.substring(0, i + 1);
+    i++;
+
+    if (i === currentWord.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1000); // wait before deleting
+      return;
+    }
+  } else {
+    // Deleting
+    target.textContent = currentWord.substring(0, i - 1);
+    i--;
+
+    if (i === 0) {
+      isDeleting = false;
+      j = (j + 1) % textArray.length; // move to next word
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? typingSpeed / 2 : typingSpeed);
+}
+
+// Start the effect
+typeEffect();
+
 
 const quotes = [
   {
