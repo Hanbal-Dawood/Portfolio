@@ -141,10 +141,11 @@ nav.navbar.container {
   }
   .section-header h2 {
     font-weight: 600;
-}
-.hero-img-txt {
-  max-width: 330px;
-}
+    font-size: 35px;
+  }
+  .hero-img-txt {
+    max-width: 330px;
+  }
   .projects-outer {
     padding-top: 120px;
   }
@@ -190,10 +191,13 @@ nav.navbar.container {
   .site-footer {
     margin-top: 40px;
   }
-  .footer-content{
+  .footer-content {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  .footer-left-box {
+    text-align: center;
   }
   .hero-img img {
     width: 100%;
