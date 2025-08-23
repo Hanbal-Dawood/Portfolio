@@ -130,6 +130,9 @@ nav.navbar.container {
   .hero-left-inner {
     gap: 0px;
   }
+  .hero-left-inner p {
+    margin-top: 30px;
+  }
   .hero-right-image {
     text-align: center;
   }
