@@ -206,4 +206,7 @@ nav.navbar.container {
 }
 /* mini phone */
 @media (max-width: 412px) and (min-width: 320px) {
+      .hero-img-txt {
+        max-width: 330px;
+    }
 }
