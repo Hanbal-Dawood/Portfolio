@@ -55,20 +55,6 @@ function initThemeToggle() {
 
 }
 
-
-// const target = document.getElementById("animated-text");
-// const text = "front-end  developer";
-
-// [...text].forEach((char, i) => {
-//   const span = document.createElement("span");
-//   span.textContent = char;
-//   setTimeout(() => {
-//     span.style.opacity = "1";
-//     // span.style.transform = "translateY(0)";
-//   }, 200 * i);
-//   target.appendChild(span);
-// });
-
 const target = document.getElementById("animated-text");
 
 // Words to loop through
