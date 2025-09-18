@@ -1,11 +1,14 @@
 // This should run after the navbar is loaded
 function setActiveNav() {
-  const currentPage = window.location.pathname.split("/").pop();
+  let currentPage = window.location.pathname.split("/").pop();
+  if (currentPage === "" || currentPage === "/") {
+    currentPage = "index.html";
+  }
   const navLinks = document.querySelectorAll("a[href]");
 
   navLinks.forEach((link) => {
     const href = link.getAttribute("href");
-    if (href === currentPage || (href === "index.html" && currentPage === "")) {
+    if (href === currentPage) {
       link.classList.add("active");
     }
   });
@@ -52,7 +55,6 @@ function initThemeToggle() {
     localStorage.setItem("theme", next);
     console.log("Theme changed to:", next);
   });
-
 }
 
 const target = document.getElementById("animated-text");
@@ -60,7 +62,8 @@ const target = document.getElementById("animated-text");
 // Words to loop through
 const textArray = ["Front-End Developer", "Web Designer", "Problem Solver"];
 
-let i = 0, j = 0;
+let i = 0,
+  j = 0;
 let currentWord = "";
 let isDeleting = false;
 let typingSpeed = 120;
@@ -94,7 +97,6 @@ function typeEffect() {
 
 // Start the effect
 typeEffect();
-
 
 const quotes = [
   {
