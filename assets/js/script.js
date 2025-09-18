@@ -1,20 +1,28 @@
-// This should run after the navbar is loaded
 function setActiveNav() {
   let currentPage = window.location.pathname.split("/").pop();
-  // If homepage ("/" or ""), treat as "index.html"
+
+  // If no file in path, map to index.html
   if (currentPage === "" || currentPage === "/") {
     currentPage = "index.html";
   }
+
   const navLinks = document.querySelectorAll("a[href]");
 
   navLinks.forEach((link) => {
-    const href = link.getAttribute("href");
-    // Add active if:
-    // - href matches currentPage
-    // - OR href is "index.html" and path is "/"
+    let href = link.getAttribute("href");
+
+    // Handle Netlify-style paths (without .html)
+    if (href.endsWith(".html")) {
+      href = href.replace(".html", "");
+    }
+    let path = window.location.pathname.replace("/", "");
+    if (path === "") path = "index";
+
+    // Compare cleaned paths
     if (
       href === currentPage ||
-      (href === "index.html" && window.location.pathname === "/")
+      href === path + ".html" ||
+      href === path
     ) {
       link.classList.add("active");
     } else {
@@ -22,6 +30,7 @@ function setActiveNav() {
     }
   });
 }
+
 
 function initNavbar() {
   const menuIcon = document.getElementById("menu-icon");
