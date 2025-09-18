@@ -26,7 +26,6 @@ function setActiveNav() {
 
 document.addEventListener("DOMContentLoaded", setActiveNav);
 
-
 function initNavbar() {
   const menuIcon = document.getElementById("menu-icon");
   const sidebar = document.getElementById("sidebar");
