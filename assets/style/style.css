@@ -55,6 +55,7 @@ nav.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .logo a {
   color: var(--text-color);
@@ -89,10 +90,6 @@ nav.navbar {
   list-style: none;
   gap: 20px;
   align-items: center;
-}
-
-.menu-list li {
-  position: relative;
 }
 
 .nav-link {
@@ -306,7 +303,7 @@ button#theme-toggle {
   position: absolute !important;
   top: 0;
   z-index: 999;
-  left: 5%;
+  left: 15%;
 }
 .nav-social ul {
   padding: 0px;
