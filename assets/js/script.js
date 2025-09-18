@@ -1,6 +1,7 @@
 // This should run after the navbar is loaded
 function setActiveNav() {
   let currentPage = window.location.pathname.split("/").pop();
+  // If homepage ("/" or ""), treat as "index.html"
   if (currentPage === "" || currentPage === "/") {
     currentPage = "index.html";
   }
@@ -8,8 +9,16 @@ function setActiveNav() {
 
   navLinks.forEach((link) => {
     const href = link.getAttribute("href");
-    if (href === currentPage) {
+    // Add active if:
+    // - href matches currentPage
+    // - OR href is "index.html" and path is "/"
+    if (
+      href === currentPage ||
+      (href === "index.html" && window.location.pathname === "/")
+    ) {
       link.classList.add("active");
+    } else {
+      link.classList.remove("active");
     }
   });
 }
