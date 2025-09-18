@@ -1,35 +1,30 @@
 function setActiveNav() {
-  let currentPage = window.location.pathname.split("/").pop();
+  let path = window.location.pathname;
 
-  // If no file in path, map to index.html
-  if (currentPage === "" || currentPage === "/") {
-    currentPage = "index.html";
-  }
+  // normalize: remove leading "/" and ".html"
+  path = path.replace(/^\/+/, "").replace(/\.html$/, "");
+
+  // homepage fallback
+  if (path === "") path = "index";
 
   const navLinks = document.querySelectorAll("a[href]");
 
   navLinks.forEach((link) => {
     let href = link.getAttribute("href");
 
-    // Handle Netlify-style paths (without .html)
-    if (href.endsWith(".html")) {
-      href = href.replace(".html", "");
-    }
-    let path = window.location.pathname.replace("/", "");
-    if (path === "") path = "index";
+    // normalize link the same way
+    href = href.replace(/\.html$/, "");
+    if (href === "") href = "index";
 
-    // Compare cleaned paths
-    if (
-      href === currentPage ||
-      href === path + ".html" ||
-      href === path
-    ) {
+    if (href === path) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", setActiveNav);
 
 
 function initNavbar() {
