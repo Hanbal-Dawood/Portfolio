@@ -126,7 +126,6 @@ nav.navbar {
   color: var(--primary-color);
 }
 
-
 button#theme-toggle {
   background: none;
   border: none;
@@ -249,7 +248,7 @@ button#theme-toggle {
 
 /* Blinking cursor for typewriter */
 .animated-text::after {
-  content: '';
+  content: "";
   display: inline-block;
   margin-left: 3px;
   width: 13px;
@@ -260,8 +259,14 @@ button#theme-toggle {
 }
 
 @keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .primary-btn {
@@ -396,12 +401,12 @@ button#theme-toggle {
   padding-top: 100px;
 }
 .project-img video {
-  width: 99%;
+  width: 99.9%;
   height: auto;
   display: block;
 }
 .out-padding {
-  padding-top: 150px!important;
+  padding-top: 150px !important;
 }
 .section-header {
   display: flex;
